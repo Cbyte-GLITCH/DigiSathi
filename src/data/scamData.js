@@ -1,0 +1,195 @@
+export const SCAM_EXAMPLES = [
+  {
+    id: 'prize-call',
+    badge: 'High Risk',
+    title: 'Fake Prize / Lottery Call',
+    titleHi: 'फर्जी लॉटरी या इनाम वाली कॉल',
+    sampleMessage: '“Congratulations! Your mobile number won ₹25,00,000 in Kaun Banega Crorepati. To claim your cash, send ₹2,500 registration fee immediately!”',
+    sampleMessageHi: '“बधाई हो! आपके मोबाइल नंबर ने KBC में ₹25 लाख जीते हैं। इनाम पाने के लिए तुरंत ₹2,500 प्रोसेसिंग फीस जमा करें!”',
+    explanation: 'Scammers invent exciting prizes to make you act quickly. Remember: If you did not buy a ticket or enter a contest, you cannot win a prize. Legitimate prizes NEVER ask you to pay money first to receive money.',
+    explanationHi: 'धोखेबाज आपको लालच देकर जल्दबाजी में पैसे ऐंठते हैं। याद रखें: जब आपने कोई लॉटरी टिकट खरीदा ही नहीं, तो आप जीत कैसे सकते हैं? कोई भी असली संस्था इनाम देने के लिए आपसे पहले पैसे नहीं मांगती।',
+    redFlags: [
+      'They ask you to transfer a "processing fee" or "GST" first.',
+      'They pressure you to act within 15 minutes before the prize expires.',
+      'They call from personal WhatsApp numbers with fake company logos.',
+    ],
+    redFlagsHi: [
+      'वे आपसे पहले "प्रोसेसिंग फीस" या टैक्स जमा करने को कहते हैं।',
+      'वे 15 मिनट के अंदर पैसे भेजने का भारी दबाव बनाते हैं।',
+      'वे कंपनी के नाम का फर्जी प्रोफाइल बनाकर साधारण नंबर से कॉल करते हैं।',
+    ],
+    actionSteps: [
+      'Disconnect the call immediately.',
+      'Do not transfer even ₹1 rupee.',
+      'Tell your family or call the National Cyber Crime Helpline on 1930.',
+    ],
+    actionStepsHi: [
+      'कॉल को तुरंत काट दें।',
+      'एक भी रुपया किसी खाते में ट्रांसफर न करें।',
+      'अपने परिवार को बताएं या राष्ट्रीय साइबर हेल्पलाइन 1930 पर संपर्क करें।',
+    ],
+  },
+  {
+    id: 'suspicious-links',
+    badge: 'Dangerous',
+    title: 'Suspicious Links via SMS & WhatsApp',
+    titleHi: 'संदिग्ध नीले लिंक वाले मैसेज',
+    sampleMessage: '“Click here: http://bit.ly/pm-yojana-cash to claim your free ₹10,000 pension bonus. Valid only today!”',
+    sampleMessageHi: '“मुफ्त ₹10,000 पेंशन सहायता पाने के लिए तुरंत इस लिंक पर क्लिक करें: http://bit.ly/free-cash”',
+    explanation: 'Fake links take you to dangerous websites that look just like official portals. They can download malicious software onto your phone or steal passwords saved in your browser.',
+    explanationHi: 'ये फर्जी लिंक आपको ऐसी नकली वेबसाइट पर ले जाते हैं जो असली जैसी दिखती हैं। इन पर क्लिक करने से आपके फोन में जासूसी ऐप डाउनलोड हो सकता है।',
+    redFlags: [
+      'Weird shortened web addresses like bit.ly, tinyurl, or random numbers.',
+      'Grammar mistakes and exaggerated promises of free government money.',
+      'Requests to enter your bank account number or debit card digits.',
+    ],
+    redFlagsHi: [
+      'अजीब लिंक जैसे bit.ly, tinyurl या अनजान स्पेलिंग।',
+      'मुफ्त पैसे देने का झूठा सरकारी दावा।',
+      'लिंक खोलते ही बैंक खाता या कार्ड नंबर मांगने की मांग।',
+    ],
+    actionSteps: [
+      'NEVER tap unknown blue links received from unfamiliar numbers.',
+      'Delete the message right away.',
+      'If curious, ask a family member to verify on the official government website.',
+    ],
+    actionStepsHi: [
+      'अनजान नंबर से आए किसी भी नीले लिंक पर कभी क्लिक न करें।',
+      'ऐसे मैसेज को तुरंत डिलीट कर दें।',
+      'कोई भी शंका होने पर परिवार के सदस्य से कहें।',
+    ],
+  },
+  {
+    id: 'bank-upi-pin',
+    badge: 'Critical Rule',
+    title: 'Fake Bank Call Demanding UPI PIN or OTP',
+    titleHi: 'बैंक कर्मचारी बनकर UPI PIN या OTP मांगना',
+    sampleMessage: '“Sir, your ATM card is blocked due to KYC. Tell me the 6-digit OTP sent to your phone right now, or your account will be permanently closed!”',
+    sampleMessageHi: '“सर, KYC न होने के कारण आपका ATM कार्ड ब्लॉक हो गया है। अपना 6 अंकों का OTP और UPI PIN तुरंत बताएं, वरना खाता हमेशा के लिए बंद हो जाएगा!”',
+    explanation: 'NO BANK MANAGER OR RBI OFFICIAL EVER ASKS FOR YOUR UPI PIN, PASSWORD, OR OTP. A UPI PIN is strictly for you to enter silently on your own keypad. The moment someone asks for your PIN, you are speaking to a thief.',
+    explanationHi: 'कोई भी असली बैंक मैनेजर, पुलिस या अधिकारी कभी भी आपका UPI PIN या OTP फोन पर नहीं मांगता। UPI PIN केवल आपके अपने फोन पर गुप्त रखने के लिए होता है। जो भी पिन मांगे, वह धोखेबाज है।',
+    redFlags: [
+      'Threatening that your bank account or pension will be stopped today.',
+      'Asking you to install apps like "AnyDesk" or "TeamViewer".',
+      'Asking you to read out a 6-digit number received in SMS.',
+    ],
+    redFlagsHi: [
+      'धमकी देना कि आज आपका पेंशन या बैंक खाता बंद हो जाएगा।',
+      'फोन में "AnyDesk" या "TeamViewer" जैसी ऐप डाउनलोड करने के लिए कहना।',
+      'SMS में आए 6 अंकों के OTP को बोलकर बताने को कहना।',
+    ],
+    actionSteps: [
+      'Say "I will visit my local bank branch myself" and cut the call.',
+      'Never share OTP or UPI PIN under any circumstances.',
+      'Remember: Banks never ask for OTP over the phone.',
+    ],
+    actionStepsHi: [
+      'साफ कहें "मैं खुद अपनी बैंक शाखा जाकर बात करूंगा" और फोन काट दें।',
+      'किसी भी हालत में फोन पर OTP या PIN न बताएं।',
+      'याद रखें: बैंक कभी फोन पर OTP नहीं पूछता।',
+    ],
+  },
+  {
+    id: 'electricity-bill',
+    badge: 'Common Scam',
+    title: 'Electricity Disconnection Threat SMS',
+    titleHi: 'बिजली काटने की धमकी वाला फर्जी SMS',
+    sampleMessage: '“Dear Customer, Your electricity power will be disconnected tonight at 9:30 PM because previous bill was not updated. Immediately call electricity officer at 9876543210.”',
+    sampleMessageHi: '“प्रिय उपभोक्ता, आपका बिजली कनेक्शन आज रात 9:30 बजे काट दिया जाएगा क्योंकि बिल अपडेट नहीं हुआ है। तुरंत बिजली अधिकारी 98xxxx पर कॉल करें।”',
+    explanation: 'Scammers send these mass SMS messages at night when offices are closed, causing panic. When you call the private mobile number, they ask you to make a small ₹10 payment on a fake link to hack your bank.',
+    explanationHi: 'यह मैसेज अक्सर शाम को भेजा जाता है ताकि घबराहट में आप सोचे बिना कॉल कर लें। जब आप कॉल करते हैं तो वे बिल अपडेट करने के नाम पर ₹10 का नकली भुगतान करवाकर खाता खाली कर देते हैं।',
+    redFlags: [
+      'Sent from an ordinary personal 10-digit mobile number, not official power board code.',
+      'Urgent evening deadline ("tonight at 9:30 PM").',
+      'Asks you to call a private mobile number instead of the official electricity helpline.',
+    ],
+    redFlagsHi: [
+      'सरकारी विभाग के बजाय साधारण 10 अंकों के मोबाइल नंबर से भेजा गया मैसेज।',
+      'आज रात बिजली कटने की जल्दबाजी और धमकी।',
+      'किसी अज्ञात व्यक्ति के मोबाइल नंबर पर कॉल करने का निर्देश।',
+    ],
+    actionSteps: [
+      'Do not panic. Real electricity boards never cut power without printed formal notices.',
+      'Never call the personal mobile number given in that text.',
+      'Check your actual paper bill or consult your building secretary / family.',
+    ],
+    actionStepsHi: [
+      'घबराएं नहीं। बिजली विभाग बिना लिखित नोटिस के कभी फोन पर बिजली नहीं काटता।',
+      'मैसेज में दिए गए मोबाइल नंबर पर कभी कॉल न करें।',
+      'अपना पिछला बिजली बिल देखें या परिवार से जांच करवाएं।',
+    ],
+  },
+  {
+    id: 'digital-arrest',
+    badge: 'Dangerous',
+    title: '“Digital Arrest” / Fake Police Video Call',
+    titleHi: 'नकली पुलिस और "डिजिटल अरेस्ट" का डर',
+    sampleMessage: '“This is Crime Branch Mumbai. A parcel containing illegal drugs was sent with your Aadhaar number. You are under digital arrest. Stay on camera and transfer your savings to RBI verification account.”',
+    sampleMessageHi: '“हम मुंबई क्राइम ब्रांच से बोल रहे हैं। आपके आधार नंबर से नशीली दवाओं का पार्सल भेजा गया है। आप डिजिटल अरेस्ट हैं। पैसे वेरिफिकेशन खाते में ट्रांसफर करें।”',
+    explanation: 'There is NO SUCH THING as "Digital Arrest" under Indian Law. The Supreme Court and Police have warned that police officers never interrogate people over WhatsApp video call or ask for funds transfer.',
+    explanationHi: 'भारतीय कानून में "डिजिटल अरेस्ट" जैसा कोई नियम नहीं है। असली पुलिस कभी भी व्हाट्सएप वीडियो कॉल पर पूछताछ नहीं करती और न ही पैसे ट्रांसफर करने को कहती है।',
+    redFlags: [
+      'Caller is wearing a police costume in front of a fake background.',
+      'Tells you not to talk to your family or disconnect the video call.',
+      'Demands that you transfer money into a "government safety account".',
+    ],
+    redFlagsHi: [
+      'नकली पुलिस की वर्दी पहनकर वीडियो कॉल करना।',
+      'परिवार से बात न करने या वीडियो कॉल न काटने की धमकी देना।',
+      'पैसे को "सरकारी सुरक्षा खाते" में भेजने को कहना।',
+    ],
+    actionSteps: [
+      'Hang up immediately! Real police do not call via WhatsApp video.',
+      'Inform your local police station or dial 112 / 1930.',
+      'Tell your family members right away. You have done nothing wrong.',
+    ],
+    actionStepsHi: [
+      'कॉल को तुरंत काट दें! असली पुलिस व्हाट्सएप वीडियो पर जांच नहीं करती।',
+      'अपने नजदीकी पुलिस स्टेशन या 112 / 1930 पर सूचना दें।',
+      'तुरंत अपने परिवार को बताएं। आपने कोई अपराध नहीं किया है।',
+    ],
+  },
+];
+
+export const SAFETY_QUIZ_QUESTIONS = [
+  {
+    id: 1,
+    question: 'A caller claiming to be your bank manager says: "Your ATM card is expiring. Tell me your 6-digit UPI PIN to renew it." What should you do?',
+    questionHi: 'एक कॉलर खुद को बैंक मैनेजर बताकर कहता है: "आपका ATM कार्ड एक्सपायर हो रहा है। रिन्यू करने के लिए अपना 6 अंकों का UPI PIN बताएं।" आपको क्या करना चाहिए?',
+    options: [
+      { text: 'Cut the call immediately. Banks never ask for UPI PIN.', isCorrect: true, feedback: 'Correct! Well done! No genuine bank employee will ever ask for your UPI PIN.' },
+      { text: 'Tell the PIN so your card is not blocked.', isCorrect: false, feedback: 'Dangerous! Sharing your PIN allows thieves to withdraw all your money instantly.' },
+      { text: 'Send the PIN via SMS instead of speaking.', isCorrect: false, feedback: 'Wrong! Never send your PIN anywhere via call, SMS, or WhatsApp.' },
+    ],
+  },
+  {
+    id: 2,
+    question: 'You receive an SMS saying: "Click here to claim ₹5,000 government subsidy today." What is the safest action?',
+    questionHi: 'आपको एक SMS मिलता है: "सरकारी सहायता के ₹5,000 पाने के लिए यहाँ क्लिक करें।" सबसे सुरक्षित कदम क्या है?',
+    options: [
+      { text: 'Click the link quickly before it expires.', isCorrect: false, feedback: 'Dangerous! Fake links can install viruses or steal your passwords.' },
+      { text: 'Delete the SMS and never click unknown links.', isCorrect: true, feedback: 'Correct! Excellent! Never open unexpected links offering free money.' },
+      { text: 'Forward the message to all friends and family.', isCorrect: false, feedback: 'No! Forwarding scam links puts your loved ones in danger too.' },
+    ],
+  },
+  {
+    id: 3,
+    question: 'When do you actually need to enter your secret UPI PIN?',
+    questionHi: 'आपको अपना गुप्त UPI PIN कब दर्ज करने की आवश्यकता होती है?',
+    options: [
+      { text: 'Only when YOU are sending money from your account.', isCorrect: true, feedback: 'Superb! Golden Rule: PIN is ONLY for sending money, NEVER for receiving money.' },
+      { text: 'When someone is sending money into your bank.', isCorrect: false, feedback: 'False! You never need to enter a PIN to receive money.' },
+      { text: 'To win a lottery or prize.', isCorrect: false, feedback: 'Wrong! Lotteries asking for PIN are scams.' },
+    ],
+  },
+  {
+    id: 4,
+    question: 'Someone on a WhatsApp video call in a police uniform says you are under "Digital Arrest". What should you do?',
+    questionHi: 'व्हाट्सएप वीडियो कॉल पर पुलिस वर्दी में कोई व्यक्ति कहता है कि आप "डिजिटल अरेस्ट" हैं। आपको क्या करना चाहिए?',
+    options: [
+      { text: 'Disconnect the call immediately and tell your family or dial 1930.', isCorrect: true, feedback: 'Correct! Digital arrest is completely fake. Indian police do not arrest people over WhatsApp.' },
+      { text: 'Transfer your money to them to prove you are innocent.', isCorrect: false, feedback: 'Dangerous! Police never ask citizens to transfer money to prove innocence.' },
+      { text: 'Keep quiet and do not inform your family.', isCorrect: false, feedback: 'Wrong! Always talk to your family or local police.' },
+    ],
+  },
+];
